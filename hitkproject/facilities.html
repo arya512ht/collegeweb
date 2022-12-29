@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/HIT_20.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="virtual.html">VIRTUAL TOUR</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <h1>FACILITIES</h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"> Student Log in</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal"> Student Sign up</button>
+
+
+        <!-- modal -->
+    
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
+        
+         
+        
+          
+          <!-- Modal -->
+          <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="signupModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+ </section>
+</header>
+<main>
+ <section class="container my-4">
+    <div class="row" data-bs-target="#signupModal">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 d-inline-block mb-2 text-primary">Download Admission Letter</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             <img src="./images/online.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false" alt="remote image">
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+             <h3 class="mb-0 d-inline-block mb-2 text-success">Logic Details</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="./images/6922182.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false" alt="remote image">
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0 d-inline-block mb-2 text-primary">Online Fees Payment</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+             <img src="./images/virtual-classroom-study-space.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false" alt="remote image">
+    
+            </div>
+          </div>
+        </div>
+
+
+
+     <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0 d-inline-block mb-2 text-success">e-Commerce Form</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>       
+            <div class="col-auto d-none d-lg-block">
+                <img src="./images/collage-city-committed-education.jpg" class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveaspectratio="xMidYMid slice" focusable="false" alt="remote image">
+    
+            </div>
+          </div>
+        </div>
+    </div>
+    
+</section>
+</main>
+
+<!-- footer -->
+<section class="footer">
+    <section class="footer">
+        <tr style="height:30px;">
+            <td style="color:black;text-align:left;width:300px;vertical-align:middle;">
+                <a href="Announcement.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Announcements</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="Events1.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Events</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="News.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>News</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="GrievanceCell.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Grievance Redressal</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font> 
+                <a href="Notice.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Notice</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="Newsletter.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Newsletter</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="Jobs.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Jobs</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="Tender.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Tender</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="Feedback.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Feedback</font></a>
+                <font style="font-family:Arial;font-size:14px;">|</font>
+                <a href="ImageGallery.aspx" style="font-family:Arial;font-size:14px;text-decoration:none;color:black;"><font>Gallery</font></a>
+                
+            </td>
+        </tr>
+        <div class="icons">
+            <a href="https://www.facebook.com/Heritageit/"><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href="https://in.linkedin.com/school/heritage-institute-of-technology/"><i
+                    class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@TheHeritageGroupofInstitutions"><i class="fa fa-youtube"></i></a>
+
+        </div>
+        <a href="" class="footer-link">
+            <p>made with <i class="fa fa-heart-o"></i> by CSE-C</p>
+        </a>
+        <tr style="height:30px;" align="center">
+            <td>
+                <font style="font-family:Arial;font-size:10px;color:black;">Copyright © 2022, Heritage Institute of Technology, All right reserved.</font>
+            </td>
+        </tr>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</body>
+
